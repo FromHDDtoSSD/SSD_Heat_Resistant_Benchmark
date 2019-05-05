@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+  version="1.2.0.0"
+  processorArchitecture="amd64"
+  name="IUEC.SorachanCoin.SSD_HEAT_benchmark.exe"
+  type="win32"
+/>
+<description>SSD_HEAT_benchmark Windows_Common</description>
+<dependency>
+  <dependentAssembly>
+    <assemblyIdentity
+      type="win32"
+      name="Microsoft.Windows.Common-Controls"
+      version="6.0.0.0"
+      processorArchitecture="amd64"
+      publicKeyToken="6595b64144ccf1df"
+      language="*"
+    />
+  </dependentAssembly>
+</dependency>
+
+<ms_asmv3:trustInfo xmlns:ms_asmv3="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+        </requestedPrivileges>
+    </security>
+</ms_asmv3:trustInfo>
+
+</assembly>

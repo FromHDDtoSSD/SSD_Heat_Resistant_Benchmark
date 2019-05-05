@@ -1,0 +1,218 @@
+// Copyright (c) 2019 The SorachanCoin Developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef SORACHANCOIN_RC_H
+#define SORACHANCOIN_RC_H
+
+#include "resource.h"
+
+ICO_MIMI ICON "mimi.ico"
+
+IDR_MENU_ENGLISH MENU
+BEGIN
+    POPUP "File(&F)"
+        BEGIN
+            MENUITEM "Log(&L)"                    IDM_BENCH_LOG
+            MENUITEM SEPARATOR
+            MENUITEM "Exit(&X)",                  IDM_FILE_EXIT
+        END
+    POPUP "Benchmark(&B)"
+        BEGIN
+            MENUITEM "Start(&S)...",              IDM_BENCH_START
+            MENUITEM "Stop(&T)...",               IDM_BENCH_STOP
+        END
+    POPUP "Info(&I)"
+        BEGIN
+            MENUITEM "Version(&V)...",            IDM_INFO_VERSION
+        END
+    POPUP "Language(&L)"
+        BEGIN
+            MENUITEM "English(&E)...",            IDM_LANG_ENGLISH
+            MENUITEM "日本語(&J)...",             IDM_LANG_JAPANESE
+        END
+END
+
+IDR_MENU_JAPANESE MENU
+BEGIN
+    POPUP "ファイル(&F)"
+        BEGIN
+            MENUITEM "ログ(&L)"                    IDM_BENCH_LOG
+            MENUITEM SEPARATOR
+            MENUITEM "終了(&X)",                   IDM_FILE_EXIT
+        END
+    POPUP "ベンチマーク(&B)"
+        BEGIN
+            MENUITEM "開始(&S)...",                IDM_BENCH_START
+            MENUITEM "停止(&T)...",                IDM_BENCH_STOP
+        END
+    POPUP "情報(&I)"
+        BEGIN
+            MENUITEM "バージョン情報(&V)...",      IDM_INFO_VERSION
+        END
+    POPUP "Language(&L)"
+        BEGIN
+            MENUITEM "English(&E)...",             IDM_LANG_ENGLISH
+            MENUITEM "日本語(&J)...",              IDM_LANG_JAPANESE
+        END
+END
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE                                "SSD Heat-Resistant Benchmark Ver1.2"
+    IDS_APP_WINDOWCLASSNAME                      "SSD_Heat_resistant"
+    IDS_APP_COPYRIGHT                            "Copyright (c) 2019 The SorachanCoin Developers."
+    IDS_APP_OPENSSLRIGHT                         "This product includes software developed by the OpenSSL."
+
+    IDS_MESSAGEBOX_OK                            "OK"
+    IDS_MESSAGEBOX_ERROR                         "Error"
+    IDS_MESSAGEBOX_QUESTION                      "Question"
+    IDS_MESSAGEBOX_INFO                          "Info"
+
+    IDS_PROGRESSBAR_0                            "RandSeedBuffer"
+    IDS_PROGRESSBAR_1                            "RandRead (8192KB)"
+    IDS_PROGRESSBAR_2                            "RandRead (512KB)"
+    IDS_PROGRESSBAR_3                            "RandRead (4KB)"
+    IDS_PROGRESSBAR_4                            "RandWrite (8192KB)"
+    IDS_PROGRESSBAR_5                            "RandWrite (512KB)"
+    IDS_PROGRESSBAR_6                            "RandWrite (4KB)"
+    IDS_PROGRESSBAR_7                            "SequentialRead"
+    IDS_PROGRESSBAR_8                            "SequentialWrite"
+
+    IDS_LOG_DIR_DIALOG                           "Might you select a storage location for the log"
+    IDS_LOG_YEAR                                 "y"
+    IDS_LOG_MON                                  "mon"
+    IDS_LOG_DAY                                  "d"
+    IDS_LOG_HOUR                                 "h"
+    IDS_LOG_MIN                                  "min"
+    IDS_LOG_SEC                                  "s"
+    IDS_LOG_DRIVEINFO                            "[Drive Information]"
+    IDS_LOG_PARAM                                "Parameter"
+    IDS_LOG_THREAD                               " threads"
+    IDS_LOG_RAND                                 "RandomType"
+
+    IDS_START                                    "START"
+    IDS_STOP                                     "STOP"
+    IDS_DISK                                     "disk "
+    IDS_THREADS                                  " threads"
+    IDS_ONCE_BENCHMARK                           "Once Benchmark"
+    IDS_LOOP_BENCHMARK                           "Loop benchmark"
+    IDS_DISK_NONE                                "None"
+
+    IDS_BENCHMARK_RAND_MIX                       "Mix"
+    IDS_BENCHMARK_RAND_MT19937                   "mt19937"
+    IDS_BENCHMARK_RAND_XORSHIFT                  "Xorshift"
+    IDS_BENCHMARK_RAND_OPENSSL                   "OpenSSL"
+    IDS_BENCHMARK_ON                             "■ ON"
+    IDS_BENCHMARK_OFF                            "○ OFF"
+    IDS_RAND_LOW                                 "Rand Strength:Low"
+    IDS_RAND_MID                                 "Rand Strength:Mid"
+    IDS_RAND_HIGH                                "Rand Strength:High"
+
+    IDS_BENCHMARK_START                          "Might you start benchmark ?"
+    IDS_BENCHMARK_STOP                           "Might you stop benchmark ?"
+    IDS_BENCHMARK_INFO                           "[DRIVE Information]\n\n"
+    IDS_BENCHMARK_OK                             "Is it right ?"
+    IDS_BENCHMARK_COMPLETED                      "Completed "
+    IDS_BENCHMARK_DOING                          "Benchmarking ... "
+    IDS_BENCHMARK_RESULT                         "Result: "
+    IDS_BENCHMARK_WAITING                        "Waiting ... "
+    IDS_BENCHMARK_GENERATING                     "Generating ... "
+
+    IDS_BENCHMARK_RESULT_ERROR                   "Benchmark failed with the drive error or a memory allocation failure."
+    IDS_BENCHMARK_NO_CLOSE                       "You can not close while the benchmark is running."
+    IDS_LANG_NO_CLOSE                            "You can not change language while the benchmark is running."
+    IDS_BENCH_LOGSET_NO_CLOSE                    "You can not set the logs while the benchmark is running."
+    IDS_BENCH_START_NO_CLOSE                     "Already The benchmark has been started."
+
+    IDS_ERROR_CREATEWINDOW                       "Processing failed in CreateWindowEx."
+    IDS_ERROR_CLASSREGISTER                      "Processing failed in RegisterClassEx."
+    IDS_ERROR_BENCHMARK_START                    "Starting Benchmark is failed.\n(Benchmark init failure.)"
+    IDS_ERROR_BENCHMARK_FAILURE                  "Starting Benchmark is failed.\n(No the Drive or A memory allocation failure.)"
+    IDS_ERROR_FONT                               "Creating font failure."
+
+    IDS_MESSAGEBOX_COPYRIGHT                     "SSD Heat-Resistant Benchmark Ver1.2\n\nCopyright (c) 2019 The SorachanCoin Developers.\nThis product includes software developed by the OpenSSL.\n\n[RandomGenerator(util.cpp)]\nCopyright (c) 2009-2012 The Bitcoin developers."
+
+END
+
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE                                "SSD Heat-Resistant Benchmark Ver1.2 [耐熱]"
+    IDS_APP_WINDOWCLASSNAME                      "SSD_Heat_resistant"
+    IDS_APP_COPYRIGHT                            "Copyright (c) 2019 The SorachanCoin Developers."
+    IDS_APP_OPENSSLRIGHT                         "This product includes software developed by the OpenSSL."
+
+    IDS_MESSAGEBOX_OK                            "OK"
+    IDS_MESSAGEBOX_ERROR                         "エラー"
+    IDS_MESSAGEBOX_QUESTION                      "ご質問"
+    IDS_MESSAGEBOX_INFO                          "情報"
+
+    IDS_PROGRESSBAR_0                            "RandSeedBuffer"
+    IDS_PROGRESSBAR_1                            "RandRead (8192KB)"
+    IDS_PROGRESSBAR_2                            "RandRead (512KB)"
+    IDS_PROGRESSBAR_3                            "RandRead (4KB)"
+    IDS_PROGRESSBAR_4                            "RandWrite (8192KB)"
+    IDS_PROGRESSBAR_5                            "RandWrite (512KB)"
+    IDS_PROGRESSBAR_6                            "RandWrite (4KB)"
+    IDS_PROGRESSBAR_7                            "SequentialRead"
+    IDS_PROGRESSBAR_8                            "SequentialWrite"
+
+    IDS_LOG_DIR_DIALOG                           "ログの保管先をご選択ください"
+    IDS_LOG_YEAR                                 "年"
+    IDS_LOG_MON                                  "月"
+    IDS_LOG_DAY                                  "日"
+    IDS_LOG_HOUR                                 "時"
+    IDS_LOG_MIN                                  "分"
+    IDS_LOG_SEC                                  "秒"
+    IDS_LOG_DRIVEINFO                            "[ドライブ情報]"
+    IDS_LOG_PARAM                                "パラメータ"
+    IDS_LOG_THREAD                               "スレッド"
+    IDS_LOG_RAND                                 "乱数タイプ"
+
+    IDS_START                                    "開始"
+    IDS_STOP                                     "停止"
+    IDS_DISK                                     "disk "
+    IDS_THREADS                                  " スレッド"
+    IDS_ONCE_BENCHMARK                           "1回限り実行"
+    IDS_LOOP_BENCHMARK                           "繰り返し実行"
+    IDS_DISK_NONE                                "未接続"
+
+    IDS_BENCHMARK_RAND_MIX                       "ミックス"
+    IDS_BENCHMARK_RAND_MT19937                   "mt19937"
+    IDS_BENCHMARK_RAND_XORSHIFT                  "Xorshift"
+    IDS_BENCHMARK_RAND_OPENSSL                   "OpenSSL"
+    IDS_BENCHMARK_ON                             "■ オン"
+    IDS_BENCHMARK_OFF                            "○ オフ"
+    IDS_RAND_LOW                                 "乱数強度:弱"
+    IDS_RAND_MID                                 "乱数強度:中"
+    IDS_RAND_HIGH                                "乱数強度:強"
+
+    IDS_BENCHMARK_START                          "ベンチマークを開始いたします。\nよろしいでしょうか？"
+    IDS_BENCHMARK_STOP                           "ベンチマークを強制終了いたします。\nよろしいでしょうか？"
+    IDS_BENCHMARK_INFO                           "[ドライブ情報]\n\n"
+    IDS_BENCHMARK_OK                             "これでよろしいでしょうか？"
+    IDS_BENCHMARK_COMPLETED                      "完了 "
+    IDS_BENCHMARK_DOING                          "ベンチマーク中 ... "
+    IDS_BENCHMARK_RESULT                         "結果: "
+    IDS_BENCHMARK_WAITING                        "待機しています ... "
+    IDS_BENCHMARK_GENERATING                     "生成しています ... "
+
+    IDS_BENCHMARK_RESULT_ERROR                   "ベンチマーク中にエラーが出ております。\n※ 不良セクタの検出、またはメモリ確保エラーとなります。"
+    IDS_BENCHMARK_NO_CLOSE                       "ベンチマーク中は終了できません。\n先に、ベンチマークの強制終了をお願いいたします。"
+    IDS_LANG_NO_CLOSE                            "ベンチマーク中は言語変換できません。\n先に、ベンチマークの強制終了をお願いいたします。"
+    IDS_BENCH_LOGSET_NO_CLOSE                    "ベンチマーク中はログの設定ができません。\n先に、ベンチマークの強制終了をお願いいたします。"
+    IDS_BENCH_START_NO_CLOSE                     "ベンチマークは既に実行されております。"
+
+    IDS_ERROR_CREATEWINDOW                       "CreateWindowExの処理に失敗いたしました。"
+    IDS_ERROR_CLASSREGISTER                      "RegisterClassExの処理に失敗いたしました。"
+    IDS_ERROR_BENCHMARK_START                    "ベンチマークの開始に失敗いたしました。\n※ オブジェクト生成エラーが発生いたしました。"
+    IDS_ERROR_BENCHMARK_FAILURE                  "ベンチマークの開始に失敗いたしました。\n※ 存在しないドライブが選択されております。"
+    IDS_ERROR_FONT                               "論理フォントの生成に失敗いたしました。"
+
+    IDS_MESSAGEBOX_COPYRIGHT                     "SSD Heat-Resistant Benchmark Ver1.2 [耐熱] \n\nCopyright (c) 2019 The SorachanCoin Developers.\nThis product includes software developed by the OpenSSL.\n\n[RandomGenerator(util.cpp)]\nCopyright (c) 2009-2012 The Bitcoin developers."
+
+END
+
+#endif
